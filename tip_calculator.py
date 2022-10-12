@@ -1,4 +1,8 @@
-
+# Get cost of food, number of payers and tip percent from the user
+# Compute the total bill
+# Total bill = tip_amount + cost_of_food + 10% tax
+# Compute splited bill if number of payers is greater than 1 
+# Repeat program until user enters no
 
 
 def get_user_inputs(): 
