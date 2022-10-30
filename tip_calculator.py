@@ -6,9 +6,12 @@
 
 
 def get_user_inputs(): 
-  cost_of_food = int(input('Enter the cost of your food : '))
-  number_of_payers = int(input('How many people will split this bill : '))
-  tip_percentage = int(input('What is the percentage of tip : '))
+  try:
+    cost_of_food = int(input('Enter the cost of your food : '))
+    number_of_payers = int(input('How many people will split this bill : '))
+    tip_percentage = int(input('What is the percentage of tip : '))
+  except ValueError: 
+    print('Thats not a valid input') 
   return (cost_of_food, number_of_payers, tip_percentage)
 
 def compute_total_bill(cost_of_food, number_of_payers, tip_percentage, sales_tax):
@@ -30,3 +33,4 @@ repeat = "yes"
 while repeat == "yes":
     main()
     repeat == input("do you want to enter another tip? enter yes/no :")
+
